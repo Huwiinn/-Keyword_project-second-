@@ -33,7 +33,7 @@
   background-color: #fcfcfc;
   min-width: 240px;
   border-radius: 8px;
-  height: 150px;
+  height: 250px;
   overflow: scroll;
   box-shadow: 0px 0px 10px 3px rgba(190, 190, 190, 0.6);
 }
@@ -54,7 +54,7 @@
   padding: 12px 20px;
 }
 .dropdown-content div:hover {
-  background-color: rgb(226, 226, 226);
+  background-color: #ffa920;
 }
 
 .dropdown-content.show {
@@ -74,6 +74,7 @@ body {
   height: 100%;
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.4);
+
 }
 .hidden {
   display: none;
@@ -97,7 +98,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
@@ -157,7 +158,8 @@ body {
   left: 50%;
   translate: -50% 0;
   text-align: left;
-  border: 1px solid #eee;
+  border: 1px solid #ffa920;
+  padding: 10px;
 }
 .btn_box {
   width: 200px;
@@ -170,10 +172,12 @@ body {
 }
 .com_btn {
   position: absolute;
-  width: 65px;
+  width: 60px;
   height: 100%;
   left: 60px;
-  background-color: #eee;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  transition-duration: .3s;
 }
 
 .close_btn {
@@ -182,5 +186,15 @@ body {
   position: absolute;
   left: 130px;
   margin-left: 10px;
-  background-color: #eee;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  transition-duration: .3s;
+}
+
+.com_btn:hover, .close_btn:hover {
+  border: 1px solid #ffa920;
+  background-color: #ffa920;
+  color: #f2f2f2;
+  /* box-shadow: 0 0 5px #a1a1a1; */
 }

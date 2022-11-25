@@ -4,8 +4,8 @@
         <div class="empty_box"></div>
         <p class="title">내가 쓴 댓글 보기</p>
         <div class="swap_btn_wrap flex">
-            <button class="btn">게시글 보기</button>
-            <button class="btn">댓글 보기</button>
+            <button class="btn"><a href="#mypage">게시글 보기</a></button>
+            <button class="btn"><a href="#comment">댓글 보기</a></button>
         </div>
     </div>
     <form method="get" action="" class="my_post flex">
@@ -105,3 +105,9 @@
         </div>
     </form>
 </section>
+
+<a class="top_btn" href="#comment" title="사이트 상단이동" onclick="javascript:window.scrollTo(0,0)"
+>
+  <p>Top</p>
+  <i class="fa-solid fa-chevron-up"></i>
+</a>
