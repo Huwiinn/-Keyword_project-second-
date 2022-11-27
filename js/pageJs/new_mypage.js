@@ -36,14 +36,14 @@ export  const seeMyPost = async() => {
         `<section id="mypost_container">
           <div id="post_wrap">
               <div class="profile">
-                <img class="cmtImg" width="50px" height="50px" src="${cmtObj.profileImg}" alt="profileImg" />
+                <img class="cmtImg" src="${cmtObj.profileImg}" alt="profileImg" />
               </div>
               <a class="nickname" href="#" title="nickname" target="_blank"><span>${cmtObj.nickname ?? "닉네임 없음"}</span></a>
               <div class="category_wrap">
                   <p class="category">#hashTag</p>
               </div>
               <div class="text_box">${cmtObj.text}</div>
-              <div class="cmtAt">${new Date(cmtObj.createdAt).toString().slice(0, 25)}</div>
+              <div class="cmtAt my">${new Date(cmtObj.createdAt).toString().slice(0, 25)}</div>
               <p id="${cmtObj.id}" class="noDisplay"></p>
               <div class="${isOwner ? "updateBtns" : "noDisplay"}">
                 <div class="revise_wrap">
@@ -89,9 +89,8 @@ export const search_post = async () => {
       <div id="post_wrap" onclick="feed_openModal(${cmtObj.createdAt})">
         <div class="post_top_wrap">
           <div class="profile">
-            <img class="cmtImg" width="50px" height="50px" src="${cmtObj.profileImg}" alt="profileImg" />
-            <a class="nickname" href="#" title="nickname" target="_blank"><span>${cmtObj.nickname ?? "닉네임 없음"}</span></a>
-          </div>
+            <img class="cmtImg" src="${cmtObj.profileImg}" alt="profileImg" /></div>
+          <a class="nickname" href="#" title="nickname" target="_blank"><span>${cmtObj.nickname ?? "닉네임 없음"}</span></a>
           <div class="category_wrap">
             <p class="category">#hashTag</p>
           </div>
